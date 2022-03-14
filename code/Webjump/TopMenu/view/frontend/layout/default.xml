@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<!--
+
+-->
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceBlock name="catalog.topnav">
+            <action method="setTemplate">
+                <argument name="template" xsi:type="string">Webjump_TopMenu::html/topmenu.phtml</argument>
+            </action>
+            <block class="Webjump\TopMenu\Block\Html\CustomLink" name="topmenu.contact.link" as="topmenu-contact-link">
+                <block class="Webjump\TopMenu\Block\Html\CustomLink" name="topmenu.homepage.link" as="topmenu-homepage-link">
+                    <arguments>
+                        <argument name="label" xsi:type="string">HOME PAGE</argument>
+                        <argument name="path" xsi:type="string">/</argument>
+                        <argument name="attributes" xsi:type="array">
+                            <item name="class" xsi:type="string">level-top ui-corner-all</item>
+                        </argument>
+                    </arguments>
+                </block>
+                <arguments>
+                    <argument name="label" xsi:type="string">CONTACT</argument>
+                    <argument name="path" xsi:type="string">contact</argument>
+                    <argument name="attributes" xsi:type="array">
+                        <item name="class" xsi:type="string">level-top ui-corner-all</item>
+                    </argument>
+                </arguments>
+            </block>
+       </referenceBlock>
+    </body>
+</page>
