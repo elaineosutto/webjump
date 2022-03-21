@@ -3,128 +3,152 @@
 //  _____________________________________________
 & when (@media-common = true) {
     
-    .navigation {
-        background: #CB0D1F;
-        .level0 {
-            >.level-top {
-                color: white;
-            }
-        }
-    }
-    .nav-sections-item-content {
-        display: block !important;
-        background-color: #CB0D1F;
-    }
-    .page-header {
-	    .panel.wrapper {
-	    	border-bottom: 1px solid #e8e8e8;
-	    	background: black;
-	}
-    }
-    .header.panel {
-    	>.header.links {
-	    	>li {
-		    	a {
-		    		line-height: 1.4;
-		    		color: white;
-		    	}
-	    	}
-    	}
-    }
-    .page-main {
-    	>.page-title-wrapper {
-	    	.page-title {
-	    		display: none;
-		    }
-    	}
-    }
-    .columns {
-	.column.main {
-		margin-top: -27px;
-	}
-    }
-    .page-layout-2columns-left {
-	    .sidebar-main {
-		    width: 16.66666667%;
-		    float: left;
-		    -ms-flex-order: 1;
-		    background: #E2DEDC 0% 0% no-repeat padding-box;
-		    height: 500px;
-		    padding-top: 25px;
-	    }
-    }
-    a {
-	    text-decoration: none;
-	    color: black;
-    }
-    .alink {
-	    text-decoration: none;
-	    color: black;
-    }
-    .page-footer {
-	margin-top: auto;
-	background: #CB0D1F 0% 0% no-repeat padding-box;
-    }
-    .footer.content {
-	border-top: none;
-	margin-top: 25px;
-	padding-bottom: 25px;
-	padding-top: 25px;
-    }
-    .footer {
-	.copyright {
-		display: block;
-		margin: 20px 0 0;
-		color: #CB0D1F;
-		color: #CB0D1F;
-	}
-	.bugs {
-		display: block;
-		margin: 20px 0 0;
-		color: #CB0D1F;
-		a {
-			color: #CB0D1F;
+	.navigation {
+	background: #CB0D1F;
+	.level0 {
+		>.level-top {
+			color: white;
 		}
 	}
 }
-
+.nav-sections-item-content {
+	display: block !important;
+	background-color: #CB0D1F;
 }
-    
+.page-header {
+.panel.wrapper {
+	border-bottom: 1px solid #e8e8e8;
+	background: black;
+}
+}
+.header.panel {
+	>.header.links {
+		>li {
+			a {
+				line-height: 1.4;
+				color: white;
+			}
+		}
+	}
+}
+.page-main {
+	>.page-title-wrapper {
+		.page-title {
+			display: none;
+		}
+	}
+}
+.columns {
+.column.main {
+	margin-top: -27px;
+}
+}
+.page-layout-2columns-left {
+	.sidebar-main {
+		width: 16.66666667%;
+		float: left;
+		-ms-flex-order: 1;
+		background: #E2DEDC 0% 0% no-repeat padding-box;
+		height: 500px;
+		padding-top: 25px;
+	}
+}
+a {
+	text-decoration: none;
+	color: black;
+}
+.alink {
+	text-decoration: none;
+	color: black;
+}
+}
+
 //
 //  Mobile
 //  _____________________________________________
 
 .media-width(@extremum, @break) when (@extremum = 'max') and (@break = @screen__m) {
 }
-    
-    
+
+
 //
 //  Tablets
 //  _____________________________________________    
 .media-width(@extremum, @break) when (@extremum = 'min') and (@break = @screen__m) {
 }
-    
+
 //
 //  Desktop
 //  _____________________________________________  
 .media-width(@extremum, @break) when (@extremum = 'min') and (@break = @screen__l) {
 
-    .navigation {
-    background: #CB0D1F;
-    .level0 {
-        >.level-top {
-            color: white;
-            }
-        }
-    }
-    .nav-sections-item-content {
-    display: block !important;
-    background-color: #CB0D1F;
-    }
+.navigation {
+background: #CB0D1F;
+.level0 {
+	>.level-top {
+		color: white;
+		}
+	}
+}
+.nav-sections-item-content {
+display: block !important;
+background-color: #CB0D1F;
+}
+.page-main {
+	>.page-title-wrapper {
+		.page-title {
+			display: inline-block;
+			color: red;
+		}
+	}
+}
+.modes-mode {
+	&:before {
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+		font-size: 35px;
+		line-height: inherit;
+		color: #f50015;
+		content: '\e60d';
+		font-family: 'icons-blank-theme';
+		vertical-align: middle;
+		display: inline-block;
+		font-weight: normal;
+		overflow: hidden;
+		speak: none;
+		text-align: center;
+	}
+	&:last-child {
+		border-right: none;
+	}
+	color: #7d7d7d;
+	border: none;
+	border-right: 0;
+	float: left;
+	font-weight: 400;
+	line-height: 1;
+	padding: 7px 10px;
+	text-align: center;
+	display: inline-block;
+	text-decoration: none;
+}
+.action.primary {
+	background: #08c9d5;
+	border: 1px solid #08c9d5;
+	color: #fff;
+}
+.block.filter {
+	.filter-title {
+		margin-bottom: 20px;
+		color: red;
+	}
+	margin-bottom: 40px;
+	margin-left: 10px;
+}
+
 }
 //
 // Desktop XL
 // _____________________________________________
 .media-width(@extremum, @break) when (@extremum = 'min') and (@break = @screen__xl) {
 }
-    
